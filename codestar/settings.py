@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-+-gro6)14x9o@85fqwb=fj9e)3%5#q0*%2=qkv(kvx1@l7j6=w
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost:8000','localhost' ,'.herokuapp.com']
 
@@ -42,8 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'blog',
-]
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
